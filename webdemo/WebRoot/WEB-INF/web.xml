@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+	<display-name></display-name>
+
+	<filter>
+		<filter-name>struts2</filter-name>
+		<filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>struts2</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>HelloWorld</servlet-name>
+		<servlet-class>chapter4.HelloWorld</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ViewDictionary</servlet-name>
+		<servlet-class>chapter4.ViewDictionary</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>TestDoGet</servlet-name>
+		<servlet-class>chapter4.TestDoGet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>TestDoPost</servlet-name>
+		<servlet-class>chapter4.TestDoPost</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>TestPrintWriter</servlet-name>
+		<servlet-class>chapter4.TestPrintWriter</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ShowImage</servlet-name>
+		<servlet-class>chapter4.ShowImage</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>IncludingServlet</servlet-name>
+		<servlet-class>chapter4.IncludingServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>IncludedServlet</servlet-name>
+		<servlet-class>chapter4.IncludedServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ForwardServlet</servlet-name>
+		<servlet-class>chapter4.ForwardServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ExploreResponseHeader</servlet-name>
+		<servlet-class>chapter4.ExploreResponseHeader</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>SaveCookie</servlet-name>
+		<servlet-class>chapter4.SaveCookie</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ReadCookie</servlet-name>
+		<servlet-class>chapter4.ReadCookie</servlet-class>
+	</servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+	<servlet-mapping>
+		<servlet-name>HelloWorld</servlet-name>
+		<url-pattern>/servlet/helloworld</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ViewDictionary</servlet-name>
+		<url-pattern>/servlet/ViewDictionary</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>TestDoGet</servlet-name>
+		<url-pattern>/servlet/TestDoGet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>TestDoPost</servlet-name>
+		<url-pattern>/servlet/TestDoPost</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>TestPrintWriter</servlet-name>
+		<url-pattern>/servlet/TestPrintWriter</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ShowImage</servlet-name>
+		<url-pattern>/servlet/ShowImage</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>IncludingServlet</servlet-name>
+		<url-pattern>/servlet/IncludingServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>IncludedServlet</servlet-name>
+		<url-pattern>/servlet/IncludedServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ForwardServlet</servlet-name>
+		<url-pattern>/servlet/ForwardServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ExploreResponseHeader</servlet-name>
+		<url-pattern>/servlet/ExploreResponseHeader</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SaveCookie</servlet-name>
+		<url-pattern>/servlet/SaveCookie</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ReadCookie</servlet-name>
+		<url-pattern>/servlet/ReadCookie</url-pattern>
+	</servlet-mapping>
+
+
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
